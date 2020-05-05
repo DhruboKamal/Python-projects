@@ -23,5 +23,5 @@ data = uh.read().decode()
 print('Retrieved', len(data), 'characters')
 
 js=json.loads(data)
-x=js
-print(js["results"][0]["place_id"])
+
+print(js["results"][0]["geometry"]["location"])
